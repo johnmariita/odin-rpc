@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPC</title>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">RPS</div>
+        <ul>
+            <li>Stats</li>
+            <li>Howto</li>
+            <li>Contribute</li>
+        </ul>
+    </header>
+    <section class="container">
+        <div class="scoreStatus">
+            <div class="humanScore">YOU: <span class="hScore">0</span></div>
+            <div class="VS">VS</div>
+            <div class="computerScore"><span class="cScore">0</span> :COMP</div>
+        </div>
+        <div class="players">
+            <div class="human player">
+                <img src="/images/rpsDefault.jpeg" class="default" alt="">
+                <div class="picks">
+                    <button value="rock" class="btn"><img src="images/rpsRock.jpeg" class="pick" alt=""></button>
+                    <button value="paper" class="btn"><img src="images/rpsPaper.jpeg" class="pick" alt=""></button>
+                    <button value="scissors" class="btn"><img src="images/rpsScissor.jpeg" class="pick" alt=""></button>
+                </div>
+            </div>
+            <div class="computer player">
+                <img src="images/rpsDefault.jpeg" class="default" alt="">
+                <div class="picks">
+                    <img src="images/rpsRock.jpeg" class="pick" alt="">
+                    <img src="images/rpsPaper.jpeg" class="pick" alt="">
+                    <img src="images/rpsScissor.jpeg" class="pick" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
